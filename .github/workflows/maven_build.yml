@@ -43,6 +43,15 @@ jobs:
       - name: login to aws ecr  
         run: aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 702620960245.dkr.ecr.ap-south-1.amazonaws.com
         
+      - name: list down docker images
+        run: docker image ls
+        
+      - name: tag a docker image 
+        run: docker tag springboot_simple:0.0.1-SNAPSHOT 702620960245.dkr.ecr.ap-south-1.amazonaws.com/monil2311-registry
+        
+      - name: push docker image
+        run: docker push 702620960245.dkr.ecr.ap-south-1.amazonaws.com/monil2311-registry
+        
        
        
 
