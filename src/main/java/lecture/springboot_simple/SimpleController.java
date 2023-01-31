@@ -17,7 +17,7 @@ public class SimpleController {
 
     @GetMapping("/greet/{name}")
     public ResponseEntity<String> greetUser(@PathVariable String name) {
-        String res = "Hello 30JanDemo try2, " + name;
+        String res = "Hello 30JanDemo try3 with docker, " + name;
         return ResponseEntity.ok(res);
     }
 
