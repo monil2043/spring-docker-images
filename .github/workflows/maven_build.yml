@@ -47,10 +47,10 @@ jobs:
         run: docker image ls
         
       - name: tag a docker image 
-        run: docker tag springboot_simple:0.0.1-SNAPSHOT 702620960245.dkr.ecr.ap-south-1.amazonaws.com/monil2311-registry
+        run: docker tag springboot_simple:0.0.1-SNAPSHOT 702620960245.dkr.ecr.ap-south-1.amazonaws.com/springboot-accelerator-registry
         
       - name: push docker image
-        run: docker push 702620960245.dkr.ecr.ap-south-1.amazonaws.com/monil2311-registry
+        run: docker push 702620960245.dkr.ecr.ap-south-1.amazonaws.com/springboot-accelerator-registry
         
        
        
